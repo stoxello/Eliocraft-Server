@@ -19,12 +19,12 @@ game client `Eliocraft`.
 
 Each release publishes:
 
-- `ChunkSurvival-Server-<version>-linux-x64.tar.gz`
-- `ChunkSurvival-Server-<version>-win-x64.zip`
+- `Eliocraft-Server-<version>-linux-x64.tar.gz`
+- `Eliocraft-Server-<version>-win-x64.zip`
 - `SHA256SUMS.txt`
 
 Download the latest release from the
-[Releases](https://github.com/stoxello/ChunkSurvival-Server/releases) page.
+[Releases](https://github.com/stoxello/Eliocraft-Server/releases) page.
 Verify the archive against `SHA256SUMS.txt` before running it.
 
 ## Quick start
@@ -32,18 +32,18 @@ Verify the archive against `SHA256SUMS.txt` before running it.
 ### Windows
 
 ```powershell
-Expand-Archive ChunkSurvival-Server-<version>-win-x64.zip -DestinationPath server
+Expand-Archive Eliocraft-Server-<version>-win-x64.zip -DestinationPath server
 cd server
-.\ChunkSurvival.Server.exe 25599
+.\Eliocraft.Server.exe 25599
 ```
 
 ### Linux
 
 ```bash
-mkdir -p server && tar -xzf ChunkSurvival-Server-<version>-linux-x64.tar.gz -C server
+mkdir -p server && tar -xzf Eliocraft-Server-<version>-linux-x64.tar.gz -C server
 cd server
-chmod +x ChunkSurvival.Server
-./ChunkSurvival.Server 25599
+chmod +x Eliocraft.Server
+./Eliocraft.Server 25599
 ```
 
 The server writes a default `server.cfg` on first launch. Type `quit` to stop;
@@ -79,8 +79,8 @@ Key settings:
 Player-hosted servers must authorize against the Eliocraft account service.
 Authorization is mandatory: set `serverId` and `serverKey` in `server.cfg`, or
 supply `SERVER_ID` and `SERVER_KEY` (plus `AUTHORIZATION_URL`, default
-`https://id.chunksurvival.com`) as environment variables. Register at
-[id.chunksurvival.com/servers](https://id.chunksurvival.com/servers) to obtain
+`https://id.Eliocraft.com`) as environment variables. Register at
+[id.Eliocraft.com/servers](https://id.Eliocraft.com/servers) to obtain
 credentials. Credentials are never written to logs.
 
 ## Plugins
@@ -104,7 +104,7 @@ install plugins you trust.
 
 A minigame backend is configured with `role=minigame` plus `minigame=<id>`
 (e.g. `spleef`). Official plugins are distributed through the
-[Eliocraft Plugins](https://github.com/stoxello/ChunkSurvivalPlugins)
+[Eliocraft Plugins](https://github.com/stoxello/EliocraftPlugins)
 repository.
 
 ## Running a multi-server cluster (Docker)
