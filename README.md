@@ -1,13 +1,13 @@
-# Chunk Survival Server
+# Eliocraft Server
 
-Binary-only releases of the Chunk Survival dedicated server. Source remains
+Binary-only releases of the Eliocraft dedicated server. Source remains
 private; this repository holds only compiled server binaries and checksums.
 
-Chunk Survival is a voxel survival game with territory claims, factions,
+Eliocraft is a voxel survival game with territory claims, factions,
 sieges, procedural worlds, wildlife, minigames, and an authoritative plugin
 system. A network gateway (port `25599`) routes players to hub, survival, and
 minigame backends. The dedicated server is the authoritative simulation for the
-game client `Chunk Survival`.
+game client `Eliocraft`.
 
 ## System requirements
 
@@ -76,7 +76,7 @@ Key settings:
 
 ## Server authorization
 
-Player-hosted servers must authorize against the Chunk Survival account service.
+Player-hosted servers must authorize against the Eliocraft account service.
 Authorization is mandatory: set `serverId` and `serverKey` in `server.cfg`, or
 supply `SERVER_ID` and `SERVER_KEY` (plus `AUTHORIZATION_URL`, default
 `https://id.chunksurvival.com`) as environment variables. Register at
@@ -104,7 +104,7 @@ install plugins you trust.
 
 A minigame backend is configured with `role=minigame` plus `minigame=<id>`
 (e.g. `spleef`). Official plugins are distributed through the
-[Chunk Survival Plugins](https://github.com/stoxello/ChunkSurvivalPlugins)
+[Eliocraft Plugins](https://github.com/stoxello/ChunkSurvivalPlugins)
 repository.
 
 ## Running a multi-server cluster (Docker)
